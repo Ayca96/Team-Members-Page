@@ -12,41 +12,57 @@ body{
 
 
 .common{
-  border: 2px solid red;
-  display: flex;
-  font-size: .7rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F6F8FA;
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: .7rem;
+  
 }
+
 .header1{
-  display: inline-block;
   margin: 2rem;
-  font-size: 1rem;
+  font-size: 2rem; 
+  
 }
 .header2{
-  display: inline-block;
   margin-top: 1rem;
+  /* border: 2px solid blue; */
+  max-width: 1000px;
 }
-.titel{
-  font-size: .8rem;
+
+.header2 h2{
+  font-size: 1.5rem;
   font-weight: 500;
 }
+
+
+.header2 p{
+  font-size: 1.5rem;
+}
+
+
 .container{
   background-color: #F6F8FA;
-  border: 2px solid red;
-  width: 100vw;
-  height: 1000px;
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  
+
+ 
 }
 .bx{
-  width: 250px;
-  height: 370px;
+  width: 450px;
+  height: 670px;
   border-radius: 5px;
-  /* margin: 50px; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,45 +70,44 @@ body{
   padding: 20px;
   position: relative;
   margin-bottom: 20px;
+  /* border: 2px solid red; */
   
 }
 
 .box1{
   background-image: url(./images/photo1.png);
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 3rem;
+  border: 2px solid red;
 }
 
 .box2{
  background-image: url(./images/photo2.png);
- margin-top: 70px;
+ margin-top: 100px;
  margin-left: 50px;
 }
 
 .box3{
   background-image: url(./images/photo3.png);
-  /* margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px; */
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 3rem;
 }
 
 .box4{
   background-image: url(./images/photo4.png);
-  margin-top: 70px;
+  margin-top: 150px;
  margin-left: 50px;
 }
 
 .box5{
   background-image: url(./images/photo5.png);
-  margin-top: 20px;
-  margin-left: 3rem;
+  margin-top: 200px;
+  margin-left: 50px;
 }
 
 .box6{
   background-image: url(./images/photo6.png);
-  margin-top: 70px;
+  margin-top: 150px;
   margin-left: 50px;
  }
   
@@ -100,7 +115,7 @@ body{
 /* Names */
 
 .name{
-  margin-top: 22.9rem;
+  margin-top: 42rem;
   position: absolute;
   left: 0px;
 }
@@ -113,4 +128,14 @@ body{
   /* transform: rotate(180deg); */
 
   
+}
+
+@media screen and (max-width: 1500px){
+
+.box5{
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+
 }
